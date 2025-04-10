@@ -1,0 +1,379 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web PPKN Sundara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ppkn.css">
+  
+  </head>
+  
+  <style>
+    table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    th {
+            background-color: #f2f2f2;
+        }
+    #SDGs {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+    }
+  
+    #SDGs #description {
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+  
+    #SDGs .goals-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+  
+    #SDGs .goal-card {
+        padding: 15px;
+        background-color: #2c7be5;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    #SDGs .goal-card:hover {
+        background-color: #1a5db8;
+        transform: scale(1.05);
+    }
+  
+    #SDGs .goal-display {
+        text-align: center;
+        margin-top: 20px;
+    }
+  
+    #SDGs .goal-display img {
+        max-width: 300px;
+        border-radius: 10px;
+        display: none;
+    }
+  
+    #SDGs #goal-title {
+        margin-bottom: 20px;
+    }
+  </style>
+  
+  
+  <body>
+  
+    <div class="Header">
+        <img src="headerppkn.png" alt="Header Image" class="header-image">
+    </div>
+    <ul class="navbar">
+        <a href="index.html">
+            <button class="home">Home</button>
+          </a>
+        <li class="dropdown">
+          <a href="perencanaan.html"><img src="perencanaan.png" alt="Beranda"></a>
+            <ul class="Dropdown">
+                <li><a href="#Beranda">1.1 Penilaian Dasar</a></li>
+                <li><a href="#SDGs">1.2 Diskusi Kelompok</a></li>
+                <li><a href="#Tujuan">1.3 Pemilihan Produk</a></li>
+                <li><a href="#Bilateral">1.4 Deskripsi Produk</a></li>
+                <li><a href="#Regional">1.5 Timeline Pembuatan Produk</a></li>
+            </ul>
+        </li>
+  
+        <li class="dropdown">
+            <a href="pelaksanaan.html"><img src="pelaksanaan.png" alt="Kerjasama"></a>
+            
+        </li>
+  
+  
+        <li><a href="kesimpulan.html"><img src="kesimpulan (1).png"></a></li>
+        
+    </ul>
+  
+    <div class="content-container">
+        <!-- Isi Konten Sidebar (Galeri) -->
+        <div class="column side">
+            <h2 align="center">Galeri</h2>
+            <h3 align="center">Mendukung SDGs dengan Kerja Sama Internasional</h3>
+            <p align="center">
+                <img src="teknik membatik.jpg" height="300" width="300" alt="Gallery Image 1">
+                <img src="sejarahbatik.jpg" height="300" width="300" alt="Gallery Image 2">
+                <img src="sekarjagad.jpg" height="300" width="300" alt="Gallery Image 3">
+            </p>
+        </div>
+  
+        <!-- Isi Konten Middlebar -->
+        <div class="column middle">
+            <div style="text-align: justify;">
+                <section id="Beranda">
+                    <h2><strong> 1.1 Penelitian Dasar</strong></h2>
+                    <p align="justify">Proses perencanaan kami dimulai dengan tahap penelitian yang mendalam tentang kain batik. Mengintegrasikan kain batik dalam produk kami merupakan langkah yang sangat tepat karena batik merupakan salah satu warisan budaya Indonesia yang diakui oleh UNESCO sebagai Warisan Budaya Takbenda pada tahun 2009. Kain batik tidak hanya mencerminkan keindahan seni tradisional, tetapi juga merupakan lambang keberagaman budaya dan sejarah bangsa Indonesia. Batik memiliki sejarah panjang yang mencerminkan nilai-nilai dan filosofi lokal melalui motif-motifnya yang unik, yang masing-masing memiliki makna dan simbolisme tersendiri. Dengan menggunakan batik, produk kami dapat mengedukasi masyarakat tentang keanekaragaman budaya Indonesia sekaligus memperkenalkan dan melestarikan teknik serta desain yang telah diwariskan turun-temurun. Selain itu, dengan memadukan elemen modern dalam desain produk kami, kami dapat menjaga relevansi batik di era kontemporer tanpa menghilangkan keasliannya. Jadi, selain dapat menunjukkan kualitas dan kreativitas produk kami, kami juga menghargai dan melestarikan warisan budaya yang berharga. Penelitian ini mencakup beberapa elemen kunci yang menjadi dasar dalam pengembangan produk kami:
+
+                    </p>
+                    <ul>
+                        <li>Sejarah Batik
+                            Kami mencari tahu asal-usul batik, yang telah ada sejak zaman kerajaan di Indonesia dan terus berkembang menjadi simbol kekayaan budaya. Kami mempelajari bagaimana batik pertama kali muncul dan bagaimana tekniknya berkembang seiring waktu.
+                        </li>
+                        <li>Teknik Membatik
+                            Kami menyelidiki teknik-teknik pembuatan batik, termasuk batik tulis, batik cap, dan batik kombinasi agar dapat lebih mengenal serta mampu menentukan batik dengan teknik apa yang ingin kami gunakan.
+                        </li>
+                        <li>Motif dan Makna
+                            Kami mencari tahu mengenai berbagai motif batik yang ada, seperti motif kawung, parang, dan mega mendung. Selain itu, kami juga belajar tentang makna simbolis dari setiap motif, yang sering kali mencerminkan nilai-nilai budaya, kepercayaan, dan cerita rakyat. Informasi ini kami kumpulkan dari berbagai sumber, termasuk artikel, berita, dan lain-lain. 
+                            
+                        </li>
+                    </ul>
+                </section>
+                
+            </div>
+        </div>
+  
+        <section id="SDGs">
+            <h2><strong>1.2 Diskusi Kelompok</strong></h2>
+            <div id="description">
+                <p align="justify">Setelah melakukan penelitian, kelompok kami berdiskusi untuk mengevaluasi hasil penelitian dan mengembangkan ide inovatif untuk proyek kami. Diskusi mencakup beberapa aspek penting yaitu:
+
+                </p>
+                <div class="highlight">
+Kami mempertimbangkan berbagai kemungkinan penggunaan kain batik dalam produk akhir, termasuk pakaian, aksesori, dan barang fungsional. Setelah menilai kelebihan dan kekurangan masing-masing opsi, kami memutuskan membuat tote bag karena :
+<ul>
+    <li>Tote bag bersifat fungsional dan sering digunakan sehari-hari.</li>
+    <li>Memiliki permukaan yang cukup luas untuk menunjukkan motif batik dengan lebih jelas.</li>
+    <li>Bisa menjadi media edukasi mengenai budaya Indonesia karena penggunaannya yang sering.</li>
+</ul>
+                </div>
+                <div class="highlight">
+                    Dalam pemilihan produk kami juga mempertimbangkan faktor-faktor seperti :
+<ul>
+    <li>Biaya produksi → tote bag lebih ekonomis dibandingkan pakaian.</li>
+    <li>Ketersediaan bahan → kain batik mudah ditemukan baik online maupun offline. dan 
+    </li>
+    <li>Kemudahan produksi sesuai dengan keterampilan yang diperlukan. 
+        → Teknik jahit yang diperlukan tidak terlalu rumit dan pernah dipelajari sebelumnya di kelas delapan.
+        </li>
+</ul>
+                </div>
+                <div align="center">
+                    <img src="tusukfeston.jpg" alt="SDGs">
+                </div>
+            </div>
+                <h2><strong>Pengembangan Produk</strong></h2>
+            <p align="justify">
+                Dalam proyek ini, kami ingin menghadirkan tote bag yang tidak hanya berfungsi sebagai tas serbaguna, tetapi juga memiliki nilai budaya dan edukatif. Awalnya, kami berencana membuat tote bag dengan kain batik sebagai elemen utama desain. Namun, setelah melakukan evaluasi lebih lanjut, kami menyadari bahwa sekadar menggunakan batik sebagai motif utama belum cukup untuk memberikan pemahaman mendalam kepada masyarakat mengenai budaya-Indonesia. Kami ingin produk yang kami buat tidak hanya menarik secara visual, tetapi juga memberikan wawasan tentang kekayaan budaya yang terkandung dalam setiap motif batik. Untuk itu, kami memutuskan untuk  menambahkan kartu edukasi dalam setiap tote bag yang kami produksi. Kartu ini berisi informasi tentang motif batik yang digunakan, termasuk sejarah, filosofi, serta makna yang terkandung di dalamnya. Dengan cara ini, kami berharap setiap pembeli tidak hanya menggunakan tote bag sebagai barang sehari-hari tetapi juga mendapatkan wawasan tambahan mengenai seni dan budaya Indonesia. 
+
+            </p>
+            <p align="justify">
+                Setelah mengevaluasi berbagai jenis motif batik yang ada di Indonesia, kami memilih motif Sekar Jagad sebagai desain utama tote bag ini. Motif Sekar Jagad merupakan salah satu motif batik yang memiliki makna mendalam, yaitu menggambarkan keindahan dunia yang penuh dengan keberagaman. Kata “Sekar” berarti bunga, sementara “Jagad” berarti dunia, sehingga motif ini dapat diartikan sebagai keindahan dunia yang penuh dengan warna dan kehidupan. Lebih dari sekadar keindahan visual, motif Sekar Jagad juga melambangkan harmoni dan toleransi antarbudaya. Pola yang menyerupai peta pada motif ini menggambarkan bagaimana setiap elemen dalam dunia ini saling terhubung dan berdampingan dengan indah. Kami merasa bahwa pesan ini sangat relevan dengan kondisi masyarakat saat ini, di mana toleransi dan keberagaman menjadi nilai yang harus dijaga. Oleh karena itu, kami memilih motif Sekar Jagad untuk tote bag ini agar dapat menyampaikan pesan kebersamaan, persatuan, dan saling menghargai perbedaan. 
+
+            </p>
+            <p align="justify">
+                Untuk semakin memperkaya unsur edukasi dalam produk ini, kami juga menambahkan stiker kecil dengan ilustrasi berbagai unsur budaya Indonesia. Stiker-stiker ini tidak hanya berfungsi sebagai hiasan tambahan, tetapi juga sebagai cara untuk memperkenalkan lebih banyak aspek budaya Indonesia kepada masyarakat. Beberapa unsur budaya yang kami ilustrasikan dalam bentuk stiker meliputi, Bunga raflesia sebagai salah satu bunga terbesar di dunia yang hanya tumbuh di Indonesia, Monas (Monumen Nasional) sebagai ikon kebanggan Indonesia yang menjadi simbol perjuangan kemerdekaan, Candi Borobudur sebagai simbol sejarah yang mencerminkan kejayaan perbedaaan Nusantara, Tugu Yogyakarta sebagai simbol perjuangan dan identitas kota-kota di Indonesia, Lutung sebagai satwa endemik yang menjadi bagian dari kekayaan fauna Indonesia, Sate sebagai salah satu kuliner khas Indonesia yang terkenal di dunia. Dengan adanya stiker-stiker ini, kami ingin memberikan pengalaman yang lebih menyenangkan bagi pembeli, sekaligus memperkenalkan lebih banyak elemen budaya secara kreatif. Harapannya, produk ini tidak hanya berfungsi sebagai tas belanja atau tas sehari-hari, tetapi juga menjadi media edukasi yang dapat meningkatkan kesadaran masyarakat tentang keunikan budaya Indonesia.
+
+            </p>
+            <p align="justify">
+                Melalui proyek ini, kami berupaya menciptakan produk yang memiliki nilai lebih dari sekadar fungsi estetika. Dengan menggabungkan motif Batik Sekar Jagad, kartu edukasi, dan stiker budaya, kami ingin menghadirkan tote bag yang tidak hanya cantik dan fungsional, tetapi juga memiliki peran mendalam tentang pentingnya melestarikan budaya Indonesia. Kami berharap produk ini dapat memberikan manfaat tidak hanya bagi pengguna, tetapi juga bagi upaya pelestarian warisan budaya yang harus berkembang di Indonesia. 
+
+            </p>
+
+            <section id="Tujuan">
+                <h2><strong> 1.3 Pemilihan Produk</strong></h2>
+                <p align>Nama produk: Tote bag Batik Sekar Jagad, 
+                    Setelah mempertimbangkan berbagai opsi, kelompok kami memutuskan untuk membuat tote bag sebagai produk akhir. Berikut adalah alasan di balik keputusan ini:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Ketersediaan dan Aksesibilitas</strong>Kami memilih untuk membeli tote bag polosan melalui toko online karena ini memudahkan kami mendapatkan produk yang berkualitas dengan harga terjangkau. Selain itu, tote bag merupakan produk yang umum digunakan dan mudah untuk dimodifikasi.
+
+                    </li>
+                    <li><strong>Fungsi dan Daya Tarik
+                    </strong>Tote bag adalah barang fungsional yang dapat digunakan sehari-hari, sehingga kami dapat memaksimalkan paparan kain batik. Dengan menambahkan elemen batik, tote bag kami tidak hanya berguna tetapi juga estetik dan mendidik.
+                    </li>
+                    <li>
+                        <strong>Edukasi dan Presentasi 
+                        </strong>
+                        Kami berencana untuk menyertakan informasi edukatif di tote bag tentang batik, seperti sejarah, teknik, dan makna motif agar dapat memberikan nilai tambah bagi produk dan membantu meningkatkan kesadaran tentang budaya batik.
+
+                    </li>
+                </ul>
+            </section>
+            <section id="Bilateral">
+                <h2><strong>1.4 Deskripsi Produk</strong></h2>
+                <p align="justify">
+                    <ul>
+                        <h3><strong> A. Konsep Desain Tote Bag</strong></h3>
+                        <p align>Kami merancang tote bag dengan kain batik sebagai elemen utama. Motif batik yang kami pilih adalah Sekar Jagad, yang berasal dari Solo dan Yogyakarta. Batik ini memiliki makna mendalam tentang keberagaman dan kesatuan, sehingga tote bag ini tidak hanya berfungsi sebagai barang fungsional, tetapi juga sebagai media edukatif dalam memperkenalkan budaya dan menimbulkan rasa toleransi.
+                        </p>
+                    </ul>
+                    <div align="center">
+                        <img src="rancangan.png" alt="SDGs">
+                    <p align="justify"><strong>Beberapa elemen yang kami pertimbangkan adalah</strong>
+                    <li>Batik Sekar Jagad menjadi elemen utama, yang ditempatkan di bagian tengah tote bag untuk menonjolkan motif
+                    </li>
+                    <li>Tulisan “Dalam warna-warni Nusantara, bersinar kesatuan”,  ditambahkan sebagai pesan yang menggambarkan persatuan dalam keberagaman budaya Indonesia serta unsur toleransi.
+                    </li>
+                    <li>Aksara bahasa Sansekerta, sebagai bentuk apresiasi terhadap warisan budaya dan sejarah Nusantara.
+                    </li>
+                    </p>
+                    <h3><strong>B. Motif dan Makna</strong></h3>
+                    <p align="justify">
+                        Batik Sekar Jagad merupakan motif batik yang memiliki makna simbolis mendalam yang mencerminkan peta dunia dengan keindahan, keragaman, dan kekayaan budaya. Nama “Sekar Jagad” berasal dari bahasa Jawa, “sekar” berarti bunga dan “Jagad” berarti dunia. Gabungan kedua kata tersebut mewakili gagasan bahwa batik merupakan representasi visual dari keindahan dan keanekaragaman yang terdapat di seluruh dunia, ibarat bunga yang menghiasi bumi. Batik Sekar Jagad juga mengandung pesan tentang kearifan lokal yang terbuka terhadap pengaruh global. Motif ini menggambarkan bagaimana budaya lokal dapat mengintegrasikan berbagai pengaruh dari luar tanpa kehilangan identitasnya. Dari sini, terbukti bahwa budaya lokal mampu beradaptasi dan berkembang sambil tetap mempertahankan nilai-nilai inti mereka.
+
+                    </p>
+                    <p align="justify">
+                        Dengan demikian, melalui batik Sekar Jagad yang kaya akan simbolisme dan keindahan, kita dapat terdorong untuk menghargai keberagaman yang ada di dunia dan merayakan harmoni dalam perbedaan. Motifnya yang menyerupai peta dunia dengan berbagai elemen yang saling melengkapi, menyampaikan pesan persatuan dan penghormatan terhadap keberagaman, mengajarkan kita pentingnya memahami dan menghargai keindahan perbedaan serta perpaduan berbagai unsur menjadi harmonis. Melalui motif Sekar Jagad, kami berharap pelanggan dapat merasakan dan memahami bahwa keberagaman Indonesia adalah sebuah keindahan yang patut dirayakan.
+                    </p>
+                    <h3><strong>C. Detail Desain</strong></h3>
+                    <p align="justify">
+                        Untuk memastikan tote bag kami memiliki tampilan yang menarik sekaligus fungsional, berikut beberapa detail yang kami terapkan dalam desain :
+                    </p>
+                    <ul class="tugas">
+                        <li><strong>Kain batik Sekar Jagad menjadi elemen spesial</strong> Batik diletakkan di bagian tengah depan (bukan seluruhnya batik, melainkan hanya untuk bagian tengah/inti pada tote bag) untuk membuat motif batik tersebut lebih menonjol.
+                        </li>
+                        <li><strong>Kombinasi elemen modern dan tradisional</strong> Dengan desain yang menggabungkan elemen tradisional batik dan modernitas, tote bag kami tidak hanya berfungsi sebagai aksesori yang stylish tetapi juga sebagai alat pendidikan yang menyampaikan pesan tentang keindahan dari keberagaman. Kami berharap bahwa setiap kali pelanggan melihat motif Sekar Jagad pada tote bag kami, mereka akan diingatkan tentang kekuatan dan keindahan dari kolaborasi antar budaya, bahwa keberagaman bukanlah halangan, melainkan sebuah kesempatan untuk saling menghargai dan bekerja sama untuk menciptakan sesuatu yang lebih indah. Dengan cara ini, tujuan kami untuk menginspirasi dan mendorong masyarakat untuk merangkul perbedaan dan menjadikan keberagaman sebagai kekuatan dalam kehidupan sehari-hari akan tercapai.
+                        </li>
+                    </ul>
+                    <p align="justify"></p>
+                    <h3><strong>D. Pengembangan Model Percobaan</strong></h3>
+                    <p align="justify">Kami merencanakan langkah-langkah pembuatan tote bag batik dengan berdiskusi bersama dan mencari cara dari internet. Langkah-langkah dalam pembuatan tote bag batik meliputi:
+                    </p>
+                    <ul class="tugas">
+                        <li><strong>Pengukuran dan Pemotongan</strong> Mengukur tote bag dan memotong kain batik Sekar Jagad sesuai dengan desain yang dirancang.
+                        </li>
+                        <li><strong>Penerapan Kain Batik</strong> Menempelkan kain batik Sekar Jagad pada tote bag dengan teknik yang sesuai, baik dengan menjahit, menyablon, atau metode lain.
+                        </li>
+                        <li><strong>Evaluasi</strong> Menguji model percobaan untuk memastikan bahwa desain batik terlihat baik dan fungsionalitas tote bag tetap terjaga. Kami juga memeriksa apakah informasi edukatif yang disertakan dapat dibaca dengan jelas dan menarik.
+                        </li>
+                    </ul>
+                    <h3><strong>E. Pembuatan Material Edukasi</strong></h3>
+                    <p align="justify">Kami menyusun materi edukasi yang akan disertakan dalam tote bag, meliputi:
+                    </p>
+                    <ul class="tugas">
+                        <li><strong>Panduan Edukasi</strong>
+                            Menambahkan panduan kecil (booklet) yang disertakan bersama tote bag, berisi informasi tentang sejarah batik Sekar Jagad, asal daerahnya, hingga makna dari motif batik Sekar Jagad. Kami merancang panduan ini dengan menarik, informatif, serta dengan desain grafis yang sesuai dengan estetika batik. 
+                        </li>
+                        <li><strong>Stiker Edukasi</strong> Selain itu, kami juga akan menyediakan stiker yang berkaitan dengan motif Sekar Jagad dan asal daerahnya, yaitu Solo atau Yogyakarta. Stiker tersebut akan menampilkan elemen-elemen yang mencerminkan kekayaan budaya batik secara menarik. Melalui stiker ini, kami juga dapat  memperkenalkan maskot toko kami yang menggunakan batik atau tote bag batik ini sebagai bagian dari identitas visual kami
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section id="Regional">
+                <h2><strong>1.5 Timeline Pembuatan Produk</strong></h2>
+                <table>
+                    <tr>
+                        <th>Tahap Perencanaan</th>
+                        <th>Deskripsi Kegiatan</th>
+                        <th>Tanggal Mulai</th>
+                        <th>Tanggal Selesai</th>
+                        <th>Hasil yang dicapai</th>
+                        <th>Catatan</th>
+                    </tr>
+                    <tr>
+                        <td>Penelitian Awal produk budaya</td>
+                        <td>Riset tentang produk budaya yang ingin dibuat (misal: sejarah, makna budaya).
+                            Mengumpulkan informasi dari berbagai sumber (buku, internet, wawancara)</td>
+                        <td>Kamis, 1/8/2024                        </td>
+                        <td>Jumat, 2/8/2024                        </td>
+                        <td>Rencana untuk membuat tote bag dengan aksen dari kain batik, serta menyediakan semacam panduan untuk edukasi mengenai kain batik yang digunakan dalam tote bag, mencari mengenai sejarah, makna, beragam motif dari batik.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Diskusi Produk budaya</td>
+                        <td>Diskusi hasil penelitian.
+                            Pemilihan produk budaya yang akan dibuat.
+                            Menentukan bagaimana produk dapat dipadukan dengan elemen modern
+                            </td>
+                        <td>Jumat, 2/8/2024                        </td>
+                        <td>Kamis, 8/8/2024                        </td>
+                        <td>Menemukan motif batik pada tote bag yang akan digunakan, yakni Sekar Jagad, desain grafis pada panduan edukasi dan stiker diputuskan akan berwarna cerah dan menarik perhatian namun harus tetap mengandung aspek batik Sekar Jagad, tote bag berbahan kain kanvas putih dengan desain minimalis agar memberikan elemen modern yang sesuai dengan gaya zaman sekarang. Selain itu, desain minimalis dapat lebih menonjolkan motif batik Sekar Jagad.
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Pembuatan Desain Produk Budaya</td>
+                        <td>Menunjukkan desain produk budaya yang dibuat 
+                        </td>
+                        <td>Selasa, 13/8/2024
+                        </td>
+                        <td>Selasa, 13/8/2024</td>
+                        <td>
+                            <img src="desain.png" alt="SDGs">
+                        </td>
+                        <td>Desain ini hanya desain awal, kami masih berdiskusi agar tote bag lebih menarik dan unik.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Konsultasi pengembangan Konsep dan ide baru                        </td>
+                        <td>Mengembangkan konsep.
+                            Membuat ide baru </td>
+                        <td>Selasa, 13 Agustus 2024                        </td>
+                        <td>Jumat, 17 Agustus 2024                        </td>
+                        <td>Setelah berkonsultasi dengan Bu Arni, ide baru kami telah disetujui, yang dimana ide baru tersebut adalah membuat tote bag dengan desain batik, lalu membuat kartu edukasi.
+                        </td>
+                        <td>Perubahan</td>
+                    </tr>
+                    <tr>
+                        <td>Proses pembuatan Tote bag
+                        </td>
+                        <td>Membuat dan mencetak Tote bag, kartu edukasi, dan stiker.</td>
+                        <td>Rabu, 22 Agustus 2024</td>
+                        <td>JSabtu, 11 Januari 2025                        </td>
+                        <td>Pada bulan Agustus, kami memulai membuat desain untuk tote bag ini. Karena sudah memiliki gambaran, kami pun langsung memesan bahan-bahan yang kami perlukan.
+
+                            Kami pun mulai memesan bahan-bahan untuk untuk tote bag pada tanggal 4 September 2024. Bahan-bahan yang kita beli adalah kain batik sekar jagad. Pada tanggal 30 September 2024. 
+
+                            Lalu, pada bulan November 2024, kami membuat desain akhir tote bag dengan corak sekar jagad yang kita gunakan, dengan warna biru dan krem.
+                            
+                            Selanjutnya, karena sudah benar-benar pasti akan desain kami, kami pun memesan tote bag yang ada jasa cetaknya di platform Shopee pada tanggal 5 Desember 2024. Namun, karena pemilik toko meminta foto yang lebih HD namun tidak terjawab karena tidak melihat chat shopee, jadinya, pesanan dibatalkan oleh pemilik toko pada tanggal 6 Desember 2024. Lalu kami pun memesan lagi di toko yang sama pada tanggal 8 Desember 2024, dan memastikan untuk memantau chat dari pihak toko. Akhirnya, tote bag dengan cetakan tulisan yang kami desain sampai pada tanggal 12 Desember 2024. Selanjutnya adalah proses untuk menempelkan batik sekar jagad ke atas tote bag. Pada tanggal 18 Desember 2024, kami memotong kain batik sekar jagad sesuai dengan desain yang sudah kami buat di sekolah. Lalu, kami mulai mencoba menjahit di sekolah . Kami menjahit menggunakan teknik Feston secara jahit tangan. Lalu agar lebih cepat kami pun membagi tugas untuk menjahit kain sekar jagad ke atas tote bag. Ada yang menjahit bagian pinggiran dan ada yang menjahit bagian dalam.
+
+                            Dan akhirnya, pada tanggal 11 Januari 2025, semua tote bag sudah selesai. Dan ketika kami melakukan packing untuk pesanan pre order, kami mengecek dan merapikan kembali jika ada jahitan tote bag yang kurang rapi.
+                            </td>
+                        <td>-</td>  
+                    </tr>
+                    <tr>
+                        <td>Proses pembuatan kartu stiker</td>
+                        <td>Membuat desain dan mencetak stiker                        </td>
+                        <td>Jumat, 15 November 2024                        </td>
+                        <td>Senin, 25 November 2024                        </td>
+                        <td> Pada tanggal 17 November 2024, kami memulai untuk membuat sketsa desain stiker. Lalu desain stiker pun akhirnya selesai pada tanggal 19 November 2024. 
+
+
+                            Setelah desain sudah jadi, kami pun mencetak stiker lewat jasa cetak di platform Shopee pada tanggal 20 November 2024. Stiker pun jadi dan sampai pada tanggal 25 November 2024.
+                            
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Proses pembuatan kartu edukasi</td>
+                        <td>Membuat desain dan mencetak kartu edukasi</td>
+                        <td>Kamis, 21 November 2024</td>
+                        <td>Sabtu, 11 Januari 2025</td>
+                        <td>Pada tanggal 21 November 2024, kami mulai mencari informasi untuk kartu edukasi dan mendesain kartu edukasi. Kami ingin membuat kartu edukasi ini dalam bentuk sebuah booklet kecil. Lalu, pada tanggal 22 Desember desain booklet pun selesai. 
+
+                            Setelah itu, pada tanggal 9 Januari 2025, kami pun memesan untuk mencetak booklet di platform Shopee. Namun dikabarkan bahwa, barang akan sampai minimal 12 hari, yang pada saat itu berarti pada tanggal 21 Januari, karena melewati hari bazaar, maka kami pun membatalkan pesanan tersebut. Lalu kami menemukan solusi lain, yaitu mencetak di percetakan offline. Akhirnya, booklet pun dicetak dan jadi pada tanggal 11 Januari 2025.
+                            
+                            </td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            
+            </body>
+            </div>
+ 
